@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Benjie Asumen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Benjie Asumen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class=section_pic-container>
+            <img src="./assets/profilePicure.jpg" alt="Benjie Asumen Photo">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Benjie Asumen</h1>
+            <p class="section-text-p2">A Third-Year Computer<br>Engineering Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/My_Resume.pdf')">
+                    My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/facebook.jpg" alt="facebook" class="icon"
+                    onclick="location.href='https://www.facebook.com/benjiekyutipie'" />
+                <img src="./assets/githubpic.jpg" alt="github" class="icon"
+                    onclick="location.href='https://github.com/BenjieAs'" />
+                <img src="./assets/instagram.jpg" alt="instagram" class="icon"
+                    onclick="location.href='https://www.instagram.com/its_bnj/'" />
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow Icon" class="arrow" onclick="location.href='#about'">
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="./assets/aboutPicture.jpg" alt="Profile Picture of Benjie Asumen" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img src="./assets/experience.jpg" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>1 semester of SQL</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                    <div class="details-containers">
+                        <img src="./assets/education.jpg" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <ul>
+                            <li>STEM Graduate, Raja Soliman Science and Technology</li>
+                            <li>B.S in Computer Engineering, University of the East, Manila</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am Benjie Morales Asumen, 20 years old, from Tondo, Manila. A while ago, I created a simple
+                        self-bionote website with animated backgrounds and some hover effects. Currently, I'm working on
+                        developing a simple website using HTML and CSS for my personal portfolio.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow Icon" class="arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-detail-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Front-end Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>PYTHON</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>HTML</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>CSS</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>BOOTSTRAP</h3>
+                            <p>Basic</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Back-end Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>SQL</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>JAVA</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>C++</h3>
+                            <p>Basic</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.jpg" alt="Experience Icon" class="icon">
+                            <h3>KOTLIN</h3>
+                            <p>Basic</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow Icon" class="arrow" onclick="location.href='#portfolio'">
+    </section>
+    <section id="portfolio">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="./assets/1.png" alt="Project-1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Machine Problem 1</h2>
+                    <div class="btn-container">
+                        <a href="https://codeshare.io/Q8ABkw" target="_blank">Source Code</a>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="./assets/5.png" alt="Project-2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Machine Problem 2</h2>
+                    <div class="btn-container">
+                        <a href="https://codeshare.io/64XeQp" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow Icon" class="arrow" onclick="location.href='#contact'" style="position: absolute; top: 130rem; right: 0.5rem;">
+    </section>
+    
+    <section id="contact">
+        <p class="section-text-p1" style="margin-top: 20%;">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.jpg" alt="Email Icon" class="icon contact-icon" />
+                <p><a href="mailto:bemjeasumen@gmail.com">bemjeasumen@gmail.com</a></p>
+                <img src="./assets/linkedin.jpg" alt="LinkedIn Icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/benjie-asumen-a53001326/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Benjie Asumen. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
